@@ -15,13 +15,7 @@ dependencies {
 }
 
 tasks.register<JavaExec>("runMain") {
-    mainClass = "sdk.example.SimpleAppSample"
-    val userMain = project.property("mainClassName")
-    if (userMain != null) {
-        mainClass = userMain as String
-    } else {
-        println("You can set your own main class as: ./gradlew runMain -PmainClassName=package.MainClass")
-    }
+    mainClass = properties["mainClassName"]?.toString() ?: "sdk.example.SimpleAppSample"
     println("\nMain class set as: ${mainClass.get()}\n")
     classpath = sourceSets.getByName("main").runtimeClasspath
 }
