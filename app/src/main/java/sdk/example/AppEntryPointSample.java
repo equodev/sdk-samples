@@ -6,6 +6,6 @@ public class AppEntryPointSample {
     public static void main(String[] args) {
         EquoApp.create("APP-ENTRY-POINT")
                 .withBrowserUI()
-                .launch(); // Load app.html from resources by default
+                .launch("app.html"); // Load index.html from resources by default
     }
 }
