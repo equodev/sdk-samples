@@ -13,3 +13,17 @@ repositories {
 dependencies {
     implementation("dev.equo:dev.equo.sdk:0.0.1")
 }
+
+tasks.register<JavaExec>("runMain") {
+    mainClass = "sdk.example.SimpleAppSample"
+    if (project.hasProperty("mainClassName")) {
+        val userMain = project.property("mainClassName")
+        if (userMain != null) {
+            mainClass = userMain as String
+        } else {
+            println("You can set your own main class as: ./gradlew runMain -PmainClassName=package.MainClass")
+        }
+    }
+    println("\nMain class set as: ${mainClass.get()}\n")
+    classpath = sourceSets.getByName("main").runtimeClasspath
+}
