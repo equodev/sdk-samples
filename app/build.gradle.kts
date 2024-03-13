@@ -15,7 +15,7 @@ dependencies {
 }
 
 tasks.register<JavaExec>("runMain") {
-    mainClass = properties["mainClassName"]?.toString() ?: "sdk.example.SimpleAppSample"
+    mainClass = properties["mainClass"]?.toString() ?: "sdk.example.SimpleAppSample"
     println("\nMain class set as: ${mainClass.get()}\n")
     classpath = sourceSets.getByName("main").runtimeClasspath
 }
