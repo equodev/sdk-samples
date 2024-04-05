@@ -18,9 +18,3 @@ dependencies {
         }
     }
 }
-
-tasks.register<JavaExec>("runOsgiMain") {
-    mainClass = properties["mainClass"]?.toString() ?: "sdk.osgi.example.SimpleOSGiAppSample"
-    println("\nMain class set as: ${mainClass.get()}\n")
-    classpath = sourceSets.getByName("main").runtimeClasspath
-}

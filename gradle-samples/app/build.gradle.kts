@@ -11,11 +11,5 @@ repositories {
 }
 
 dependencies {
-    implementation("dev.equo:dev.equo.sdk:0.0.1")
-}
-
-tasks.register<JavaExec>("runMain") {
-    mainClass = properties["mainClass"]?.toString() ?: "sdk.example.SimpleAppSample"
-    println("\nMain class set as: ${mainClass.get()}\n")
-    classpath = sourceSets.getByName("main").runtimeClasspath
+    implementation("dev.equo:dev.equo.sdk:0.0.2")
 }
