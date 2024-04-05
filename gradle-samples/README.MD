@@ -20,9 +20,5 @@ Run the following command in the command line:
 ### Run an OSGi sample application
 
 ```sh
-./gradlew runOsgiMain
-
-# or
-
-./gradlew runOsgiMain -PmainClass=sdk.osgi.example.BrowserOSGiAppSample
+./gradlew runMain -PmainClass=sdk.osgi.example.BrowserOSGiAppSample
 ```
