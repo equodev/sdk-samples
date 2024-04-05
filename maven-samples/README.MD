@@ -11,10 +11,10 @@ You can run the application with Maven.
 Run the following command in the command line:
 
 ```sh
-mvn exec:java -Dexec.mainClass="sdk.example.SimpleAppSample"
+mvn exec:java -Dexec.mainClass="sdk.example.SimpleAppSample" -f app
 ```
 ### Run an OSGi sample application
 
 ```sh
-mvn exec:java -Dexec.mainClass="sdk.osgi.example.SimpleOsgiAppSample"
+mvn exec:java -Dexec.mainClass="sdk.osgi.example.SimpleOSGiAppSample" -f osgi-app
 ```
