@@ -11,8 +11,8 @@ repositories {
 }
 
 dependencies {
-    implementation("dev.equo:dev.equo.sdk:0.0.1-SNAPSHOT")
-    runtimeOnly("dev.equo:dev.equo.sdk:0.0.1-SNAPSHOT") {
+    implementation("dev.equo:dev.equo.sdk:0.0.1")
+    runtimeOnly("dev.equo:dev.equo.sdk:0.0.1") {
         capabilities {
             requireCapability("dev.equo:core-osgi-support")
         }
