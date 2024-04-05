@@ -6,44 +6,15 @@ SDK Samples is a collection of sample applications to test and prove the Equo SD
 
 You can run the application with Maven.
 
+### Run a sample application
+
 Run the following command in the command line:
 
-### Linux
-
-This is an example for SimpleAppSample application
-
-```bash
-# arch: x86_64
-mvn exec:java -Dexec.mainClass="sdk.example.SimpleAppSample" -Dequo.platform="gtk.linux.x86_64"
-
-# arch: x86
-mvn exec:java -Dexec.mainClass="sdk.example.SimpleAppSample" -Dequo.platform="gtk.linux.x86"
-
-# arch: aarch64
-mvn exec:java -Dexec.mainClass="sdk.example.SimpleAppSample" -Dequo.platform="gtk.linux.aarch64"
+```sh
+mvn exec:java -Dexec.mainClass="sdk.example.SimpleAppSample"
 ```
+### Run an OSGi sample application
 
-### windows
-
-This is an example for SimpleAppSample application
-
-```bash
-# arch: x86_64
-mvn exec:java -Dexec.mainClass="sdk.example.SimpleAppSample" -Dequo.platform="win32.win32.x86_64"
-
-# arch: x86
-mvn exec:java -Dexec.mainClass="sdk.example.SimpleAppSample" -Dequo.platform="win32.win32.x86"
-```
-
-### Mac
-
-This is an example for SimpleAppSample application
-
-```bash
-# arch: x86_64
-mvn exec:java -Dexec.mainClass="sdk.example.SimpleAppSample" -Dequo.platform="cocoa.macosx.x86_64"
-
-# arch: aarch64
-mvn exec:java -Dexec.mainClass="sdk.example.SimpleAppSample" -Dequo.platform="cocoa.macosx.aarch64"
-
+```sh
+mvn exec:java -Dexec.mainClass="sdk.osgi.example.SimpleOsgiAppSample"
 ```
