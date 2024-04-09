@@ -11,8 +11,6 @@ repositories {
     mavenCentral()
 }
 
-val sanitizeArchName = osdetector.arch.replace("_", "")
-
 dependencies {
     implementation("dev.equo:dev.equo.sdk:0.0.2")
     runtimeOnly("dev.equo:dev.equo.sdk:0.0.2") {
@@ -22,7 +20,7 @@ dependencies {
     }
     runtimeOnly("dev.equo:dev.equo.sdk:0.0.2") {
         capabilities {
-            requireCapability("dev.equo:core-chromium-${sanitizeArchName}-${osdetector.os}")
+            requireCapability("dev.equo:core-chromium-${osdetector.arch}-${osdetector.os}")
         }
     }
 }
