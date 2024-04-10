@@ -1,8 +1,4 @@
-# SDK Samples
-
-SDK Samples is a collection of sample applications to test and prove the Equo SDK.
-
-## Using Maven
+# Using Maven
 
 You can run the application with Maven.
 
@@ -60,7 +56,7 @@ You can run the application with Maven.
 > </dependency>
 > ``` 
 
-### Run a sample application
+## Run a sample application
 
 Run the following command in the command line:
 
@@ -71,7 +67,7 @@ mvn compile exec:java -f app
 
 mvn compile exec:java -f app -Dexec.mainClass="sdk.example.SimpleAppSample"
 ```
-### Run an OSGi sample application
+## Run an OSGi sample application
 
 ```sh
 mvn compile exec:java -f osgi-app
@@ -80,3 +76,4 @@ mvn compile exec:java -f osgi-app
 
 mvn compile exec:java -f osgi-app -Dexec.mainClass="sdk.osgi.example.SimpleOSGiAppSample"
 ```
+

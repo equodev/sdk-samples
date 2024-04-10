@@ -1,12 +1,8 @@
-# SDK Samples
-
-SDK Samples is a collection of sample applications to test and prove the Equo SDK.
-
-## Using Gradle
+# Using Gradle
 
 You can run the application with Gradle. By default, it uses the main class `sdk.example.SimpleAppSample`.
 
-### Run a sample application
+## Run a sample application
 
 Run the following command in the command line:
 
@@ -17,7 +13,7 @@ Run the following command in the command line:
 
 ./gradlew app:run -PmainClass=sdk.example.BrowserAppSample
 ```
-### Run an OSGi sample application
+## Run an OSGi sample application
 
 ```sh
 ./gradlew osgi-app:run
@@ -26,3 +22,4 @@ Run the following command in the command line:
 
 ./gradlew osgi-app:run -PmainClass=sdk.osgi.example.BrowserAppSample
 ```
+
