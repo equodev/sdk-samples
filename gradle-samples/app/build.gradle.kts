@@ -16,8 +16,8 @@ repositories {
 }
 
 dependencies {
-    implementation("dev.equo:dev.equo.sdk:0.0.2")
-    runtimeOnly("dev.equo:dev.equo.sdk:0.0.2") {
+    implementation("dev.equo:dev.equo.sdk:${properties["sdk-version"]}")
+    runtimeOnly("dev.equo:dev.equo.sdk:${properties["sdk-version"]}") {
         capabilities {
             requireCapability("dev.equo:core-chromium-${osdetector.arch}-${osdetector.os}")
         }
