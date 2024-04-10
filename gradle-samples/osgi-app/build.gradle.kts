@@ -4,6 +4,10 @@ plugins {
     id("com.google.osdetector") version "1.7.3"
 }
 
+application {
+    mainClass = properties["mainClass"]?.toString() ?: "sdk.osgi.example.SimpleAppSample"
+}
+
 repositories {
     maven("https://dl.equo.dev/middleware/mvn/release")
     maven("https://dl.equo.dev/chromium-swt-ee/equo-gpl/mvn")

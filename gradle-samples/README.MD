@@ -11,14 +11,18 @@ You can run the application with Gradle. By default, it uses the main class `sdk
 Run the following command in the command line:
 
 ```sh
-./gradlew runMain
+./gradlew app:run
 
 # or
 
-./gradlew runMain -PmainClass=sdk.example.BrowserAppSample
+./gradlew app:run -PmainClass=sdk.example.BrowserAppSample
 ```
 ### Run an OSGi sample application
 
 ```sh
-./gradlew runMain -PmainClass=sdk.osgi.example.BrowserOSGiAppSample
+./gradlew osgi-app:run
+
+# or
+
+./gradlew osgi-app:run -PmainClass=sdk.osgi.example.BrowserAppSample
 ```
