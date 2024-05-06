@@ -20,10 +20,6 @@
     
     <repositories>
         <repository>
-            <id>middleware</id>
-            <url>https://dl.equo.dev/middleware/mvn/release</url>
-        </repository>
-        <repository>
             <id>chromium-swt-ee</id>
             <url>https://dl.equo.dev/chromium-swt-ee/equo-gpl/mvn</url>
         </repository>

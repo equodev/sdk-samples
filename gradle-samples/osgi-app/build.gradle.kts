@@ -9,7 +9,6 @@ application {
 }
 
 repositories {
-    maven("https://dl.equo.dev/middleware/mvn/release")
     maven("https://dl.equo.dev/chromium-swt-ee/equo-gpl/mvn")
     // Use Maven Central for resolving dependencies.
     mavenCentral()
