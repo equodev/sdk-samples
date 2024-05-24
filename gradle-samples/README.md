@@ -1,25 +1,25 @@
-# Using Gradle
+# Run a sample application using Gradle
 
-You can run the application with Gradle. By default, it uses the main class `sdk.example.SimpleAppSample`.
-
-## Run a sample application
-
-Run the following command in the command line:
+To run the sample application with Gradle, run the following command in the command line:
 
 ```sh
+# By default, it uses the main class `sdk.example.SimpleAppSample`.
 ./gradlew app:run
 
 # or
 
-./gradlew app:run -PmainClass=sdk.example.BrowserAppSample
+./gradlew app:run -PmainClass="sdk.example.BrowserAppSample"
 ```
-## Run an OSGi sample application
+
+## OSGi sample application
+
+To run the sample application with OSGi Gradle, run the following command in the command line:
 
 ```sh
+# By default, it uses the main class `sdk.osgi.example.SimpleOSGiAppSample`.
 ./gradlew osgi-app:run
 
 # or
 
-./gradlew osgi-app:run -PmainClass=sdk.osgi.example.BrowserAppSample
+./gradlew osgi-app:run -PmainClass="sdk.osgi.example.BrowserOSGiAppSample"
 ```
-
