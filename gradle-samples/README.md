@@ -11,7 +11,7 @@ Run the following command in the command line:
 
 # or
 
-./gradlew app:run -PmainClass=sdk.example.BrowserAppSample
+./gradlew app:run -PmainClass="sdk.example.BrowserAppSample"
 ```
 ## Run an OSGi sample application
 
@@ -20,6 +20,6 @@ Run the following command in the command line:
 
 # or
 
-./gradlew osgi-app:run -PmainClass=sdk.osgi.example.BrowserAppSample
+./gradlew osgi-app:run -PmainClass="sdk.osgi.example.BrowserAppSample"
 ```
 
