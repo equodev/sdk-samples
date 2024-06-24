@@ -10,3 +10,4 @@ target/
 .idea/
 
 hs_err_*.log
+debug.log
