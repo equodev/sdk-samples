@@ -65,7 +65,7 @@ mvn compile exec:java -f app
 
 # or
 
-mvn compile exec:java -f app -Dexec.mainClass="sdk.example.SimpleAppSample"
+mvn compile exec:java -f app -DmainClass="sdk.example.SimpleAppSample"
 ```
 ## Run an OSGi sample application
 
@@ -74,6 +74,6 @@ mvn compile exec:java -f osgi-app
 
 # or
 
-mvn compile exec:java -f osgi-app -Dexec.mainClass="sdk.osgi.example.SimpleOSGiAppSample"
+mvn compile exec:java -f osgi-app -DmainClass="sdk.osgi.example.SimpleOSGiAppSample"
 ```
 
